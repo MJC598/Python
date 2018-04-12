@@ -38,24 +38,19 @@ def getText(request):
 #   if not there add to array
 #   if there do not add to array
 #   return array
-"""
+
 def dupes(aList):
     clean = []
-    seenText = []
+    seenText = {}
     
     for x in aList:
         text = x.text
-        for seen in seenText:
-            if seen == text:
-                break
-            else
-        if text not in seenText:
-            seen[text] = 1
-        else:
-            if seen[text] == 1:
-                d.append(x)
-            seen[text] += 1
-"""
+        #print(text)
+        if seenText(text) not 1:
+            clean.append(x)
+            seenText(text) = 1
+    return clean
+
     
 
 def run():
